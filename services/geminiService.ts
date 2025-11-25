@@ -1,6 +1,9 @@
 import { GoogleGenAI, Type, Schema, Chat } from "@google/genai";
 import { NutritionAnalysis, ChatMessage } from "../types";
 
+// Declare process to avoid TypeScript build errors in Vite environment
+declare const process: any;
+
 // Initialize Gemini Client
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
