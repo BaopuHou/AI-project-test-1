@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@google/genai": "^0.1.1",
+    "@vitejs/plugin-react": "^4.3.1",  // ← 从 devDependencies 移动到这里
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "vite": "^5.3.1",                  // ← 从 devDependencies 移动到这里
+    "typescript": "^5.5.3"             // ← 构建也需要，一并移动
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.1"
+    "@types/react-dom": "^18.3.0"
   }
 }
