@@ -4,7 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // 加载当前目录下的环境变量
-  const env = loadEnv(mode, process.cwd(), '');
+  // Fix: Cast process to any to resolve TypeScript error regarding missing cwd property
+  const env = loadEnv(mode, (process as any).cwd(), '');
   return {
     plugins: [react()],
     define: {
