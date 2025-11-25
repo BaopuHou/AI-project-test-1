@@ -1,0 +1,7 @@
+{
+  "name": "NutriScan AI",
+  "description": "拍摄食物照片，立即获取卡路里分析，并与 AI 营养师畅聊您的饮食。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
